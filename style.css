@@ -1,0 +1,64 @@
+h1::before{
+    content:"";
+    height: 30px;
+    width: 150px;
+    background-color: green;
+    position: absolute;
+    left: 130px;   
+}    
+h1::after{
+    content:"";
+    background-color:green;
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    right: 720px;
+    top:60px;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -50px;
+}
+.contener {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    background-color: yellowgreen;
+    padding: 30px;
+    margin: 0;
+}
+.text::before{
+    content: url('./VO1.jpg');
+    transform: scale(0.3, 0.3);
+    display: flex;
+    justify-content: center;
+    margin-bottom:-80px;  
+}  
+.text::after{
+    content: url('./uzory.jpg');
+    transform: scale(0.5, 0.5);
+    display: flex;
+    justify-content: center;
+    margin:-70px;  
+}
+span {
+quotes: "\201c" "\201d";
+font-size: 20px;
+font-weight: bold;
+}
+span:before {
+content: open-quote;
+}
+span:after {
+content: close-quote;
+}
+a::before{
+    content: '';
+    background-image: url('./vector.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
